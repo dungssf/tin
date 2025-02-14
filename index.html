@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>SHOP ĐỒ ĂN DŨNG YẾN</title>
+  <style>
+    /* Đặt lại một số giá trị mặc định cho các thẻ HTML */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Thiết lập nền trang và vùng chứa chính */
+    body {
+      background-color: #f5f5f5;
+    }
+    .container {
+      width: 90%;
+      max-width: 800px;
+      margin: 20px auto;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      overflow: hidden;
+      padding: 20px;
+    }
+
+    /* Đầu trang */
+    header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    header h1 {
+      color: #ff6600;
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+
+    /* Thanh điều hướng */
+    nav {
+      background-color: #ff6600;
+      margin-bottom: 20px;
+      border-radius: 5px;
+    }
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+    }
+    nav li {
+      margin: 0 10px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      display: inline-block;
+      padding: 10px;
+    }
+    nav a:hover {
+      background-color: #cc5200;
+      border-radius: 5px;
+    }
+
+    /* Khu giới thiệu và sản phẩm */
+    section {
+      margin-bottom: 20px;
+    }
+    section h2 {
+      margin-bottom: 10px;
+      color: #333;
+    }
+    #gioi-thieu p {
+      margin-bottom: 10px;
+      line-height: 1.5;
+    }
+
+    /* Danh sách sản phẩm */
+    #san-pham ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+    #san-pham li {
+      margin: 5px 0;
+    }
+
+    /* Form đặt hàng */
+    #dat-hang form {
+      display: flex;
+      flex-direction: column;
+      max-width: 500px;
+    }
+    form label {
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+    form input[type="text"],
+    form input[type="tel"],
+    form textarea {
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+    form textarea {
+      resize: vertical;
+    }
+    form input[type="submit"] {
+      margin-top: 20px;
+      background-color: #ff6600;
+      color: #fff;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      border-radius: 3px;
+    }
+    form input[type="submit"]:hover {
+      background-color: #cc5200;
+    }
+
+    /* Phần liên hệ */
+    #lien-he p {
+      line-height: 1.5;
+    }
+
+    /* Chân trang */
+    footer {
+      text-align: center;
+      border-top: 1px solid #ddd;
+      padding-top: 10px;
+      margin-top: 20px;
+      color: #666;
+    }
+.food-card {
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .food-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .food-img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .food-info {
+            padding: 1rem;
+        }
+
+        .food-title {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .food-price {
+            font-weight: bold;
+            color: #ff6b00;
+            margin-bottom: 1rem;
+        }
+
+   .feature-title {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Đầu trang -->
+    <header>
+      <h1>SHOP ĐỒ ĂN DŨNG YẾN</h1>
+      <p>Giao hàng tại Tuy An trong vòng 5p</p>
+    </header>
+
+    <!-- Thanh điều hướng -->
+    <nav>
+      <ul>
+        <li><a href="#gioi-thieu">Giới thiệu</a></li>
+        <li><a href="#san-pham">Sản phẩm</a></li>
+        <li><a href="#dat-hang">Đặt hàng</a></li>
+        <li><a href="#lien-he">Liên hệ</a></li>
+      </ul>
+    </nav>
+
+    <!-- Khu vực giới thiệu -->
+    <section id="gioi-thieu">
+      <h2>Giới thiệu</h2>
+      <p>Shop Đồ Ăn Nhanh cung cấp các món ăn tiện lợi, ngon miệng và đảm bảo vệ sinh.  
+      Chúng tôi luôn sẵn sàng phục vụ bạn một cách chu đáo nhất.</p>
+      <p>Chọn thức ăn nè</p>
+    </section>
+
+    <!-- Danh sách sản phẩm cơ bản -->
+    <section id="san-pham">
+      <h2>Sản phẩm</h2>
+      <div class="menu-grid">
+                                <div class="food-card" data-category="burger">
+                    <img src="garan.jpg" alt="Gà rán" class="food-img">
+                    <div class="food-info">
+                        <h3 class="food-title">Gà rán</h3>
+                        <p>Gà rán từ gà chất lượng cao</p>
+                        <div class="food-price">25.000đ</div>
+                        <button class="btn add-to-cart" onclick="addToCart('Gà rán', 25000)">Đặt hàng</button>
+                    </div>
+                </div>
+                
+                <div class="food-card" data-category="burger">
+                    <img src="pzi.jpg" alt="Pizza" class="food-img">
+                    <div class="food-info">
+                        <h3 class="food-title">Pizza</h3>
+                        <p>Pizza thịt gà công nghiệp</p>
+                        <div class="food-price">30.000đ</div>
+                        <button class="btn add-to-cart" onclick="addToCart('Pizza', 30000)">Đặt hàng</button>
+                    </div>
+                </div>
+
+             
+                <div class="food-card" data-category="Mì cay">
+                    <img src="mc.jpg" alt="Mì cay" class="food-img">
+                    <div class="food-info">
+                        <h3 class="food-title">Mì cay</h3>
+                        <p>Mì cay 20 cấp độ</p>
+                        <div class="food-price">30.000đ</div>
+                        <button class="btn add-to-cart" onclick="addToCart('Mì cay', 30000)">Đặt hàng</button>
+                    </div>
+                </div>
+                
+                <div class="food-card" data-category="Cá viên chiên">
+                    <img src="cvc.jpg" alt="Cá viên chiên" class="food-img">
+                    <div class="food-info">
+                        <h3 class="food-title">Cá viên chiên</h3>
+                        <p>Cá viên chiên làm từ cá hồi</p>
+                        <div class="food-price">5.000đ</div>
+                        <button class="btn add-to-cart" onclick="addToCart('Cá viên chiên', 5000)">Đặt hàng</button>
+                    </div>
+                </div>
+
+    </section>
+
+    <!-- Biểu mẫu đặt hàng -->
+    <section id="dat-hang">
+      <h2>Đặt hàng</h2>
+      <form action="#" method="post">
+        <label for="hoten">Họ và tên:</label>
+        <input type="text" id="hoten" name="hoten" required>
+
+        <label for="sdt">Số điện thoại:</label>
+        <input type="tel" id="sdt" name="sdt" required>
+
+        <label for="diachi">Địa chỉ giao hàng:</label>
+        <textarea id="diachi" name="diachi" rows="2" required></textarea>
+
+        <label for="monan">Món ăn muốn đặt:</label>
+        <input type="text" id="monan" name="monan" placeholder="Ví dụ: 2 Hamburger, 1 Gà rán..." required>
+
+        <input type="submit" value="Gửi đơn hàng">
+      </form>
+    </section>
+
+    <!-- Liên hệ -->
+    <section id="lien-he">
+      <h2>Liên hệ</h2>
+      <p>
+        Địa chỉ: Phú Tân 1 - An Cư - Tuy An - Phú Yên<br>
+        Điện thoại: 0383894446<br>
+        Email: tandung123py@gmail.com      </p>
+    </section>
+
+     </div>
+</body>
+</html>
